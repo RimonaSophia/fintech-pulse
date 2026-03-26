@@ -1,9 +1,0 @@
-requests
-duckdb
-dbt-duckdb
-vaderSentiment
-schedule
-python-dotenv
-pandas
-streamlit
-plotly
