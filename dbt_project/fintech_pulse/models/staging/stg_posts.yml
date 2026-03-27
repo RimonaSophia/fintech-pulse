@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_posts
+    description: "Cleaned and standardized Reddit posts and comments"
+    columns:
+      - name: post_id
+        description: "Unique identifier for each post or comment"
+        tests:
+          - unique
+          - not_null
+      - name: company
+        description: "Company being discussed"
+        tests:
+          - not_null
+      - name: sentiment_score
+        description: "VADER sentiment score between -1 and 1"
+        tests:
+          - not_null
+      - name: content_type
+        description: "Whether this is a post or comment"
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['post', 'comment']

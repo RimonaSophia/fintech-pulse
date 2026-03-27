@@ -1,0 +1,31 @@
+[0m19:13:45.827443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10caa6fb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e699180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e6995d0>]}
+
+
+============================== 19:13:45.842054 | f03b5526-e066-4028-a5b4-e4c6f5a83ac2 ==============================
+[0m19:13:45.842054 [info ] [MainThread]: Running with dbt=1.11.7
+[0m19:13:45.842875 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'no_print': 'None', 'write_json': 'True', 'cache_selected_only': 'False', 'printer_width': '80', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt init fintech_pulse', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'profiles_dir': '/Users/rimona/.dbt', 'use_experimental_parser': 'False', 'version_check': 'True', 'partial_parse': 'True', 'target_path': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'debug': 'False', 'log_path': 'logs', 'log_cache_events': 'False', 'warn_error': 'None'}
+[0m19:13:45.903682 [info ] [MainThread]: Creating dbt configuration folder at /Users/rimona/.dbt
+[0m19:13:45.907341 [debug] [MainThread]: Starter project path: /opt/anaconda3/envs/tf/lib/python3.10/site-packages/dbt/include/starter_project
+[0m19:13:45.939689 [info ] [MainThread]: 
+Your new dbt project "fintech_pulse" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:13:45.940260 [info ] [MainThread]: Setting up your profile.
+[0m19:14:44.327582 [info ] [MainThread]: Profile fintech_pulse written to /Users/rimona/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m19:14:44.420651 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 58.740353, "process_in_blocks": "0", "process_kernel_time": 0.50808, "process_mem_max_rss": "84750336", "process_out_blocks": "0", "process_user_time": 1.727632}
+[0m19:14:44.421323 [debug] [MainThread]: Command `dbt init` succeeded at 19:14:44.421187 after 58.74 seconds
+[0m19:14:44.421893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10caa6fb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e7ace80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e69bc40>]}
+[0m19:14:44.422578 [debug] [MainThread]: Flushing usage events
+[0m19:14:45.004338 [debug] [MainThread]: An error was encountered while trying to flush usage events

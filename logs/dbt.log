@@ -1,0 +1,68 @@
+[0m19:32:27.251452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f93eef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1108fd180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1108fd5d0>]}
+
+
+============================== 19:32:27.257813 | 534fde4d-ea90-4ceb-a023-2b79e6229ae5 ==============================
+[0m19:32:27.257813 [info ] [MainThread]: Running with dbt=1.11.7
+[0m19:32:27.258337 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'log_path': 'logs', 'use_experimental_parser': 'False', 'quiet': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'use_colors': 'True', 'write_json': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'warn_error': 'None', 'introspect': 'True', 'log_format': 'default', 'empty': 'None', 'fail_fast': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'target_path': 'None', 'no_print': 'None', 'cache_selected_only': 'False', 'profiles_dir': '/Users/rimona/.dbt'}
+[0m19:32:27.315388 [info ] [MainThread]: dbt version: 1.11.7
+[0m19:32:27.315800 [info ] [MainThread]: python version: 3.10.18
+[0m19:32:27.316075 [info ] [MainThread]: python path: /opt/anaconda3/envs/tf/bin/python3.10
+[0m19:32:27.316337 [info ] [MainThread]: os info: macOS-13.4.1-x86_64-i386-64bit
+[0m19:32:27.535448 [info ] [MainThread]: Using profiles dir at /Users/rimona/.dbt
+[0m19:32:27.535890 [info ] [MainThread]: Using profiles.yml file at /Users/rimona/.dbt/profiles.yml
+[0m19:32:27.536145 [info ] [MainThread]: Using dbt_project.yml file at /Users/rimona/fintech-pulse/dbt_project.yml
+[0m19:32:27.542107 [info ] [MainThread]: adapter type: duckdb
+[0m19:32:27.542623 [info ] [MainThread]: adapter version: 1.10.1
+[0m19:32:27.542948 [info ] [MainThread]: Configuration:
+[0m19:32:27.543214 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:32:27.543470 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:32:27.543984 [info ] [MainThread]: Required dependencies:
+[0m19:32:27.544571 [debug] [MainThread]: Executing "git --help"
+[0m19:32:28.178571 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:32:28.180368 [debug] [MainThread]: STDERR: "b''"
+[0m19:32:28.180789 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:32:28.181200 [info ] [MainThread]: Connection:
+[0m19:32:28.181624 [info ] [MainThread]:   database: fintech_pulse
+[0m19:32:28.182658 [info ] [MainThread]:   schema: main
+[0m19:32:28.183081 [info ] [MainThread]:   path: /Users/rimona/fintech-pulse/ingestion/fintech_pulse.duckdb
+[0m19:32:28.183350 [info ] [MainThread]:   config_options: None
+[0m19:32:28.183589 [info ] [MainThread]:   extensions: None
+[0m19:32:28.183822 [info ] [MainThread]:   settings: {}
+[0m19:32:28.184048 [info ] [MainThread]:   external_root: .
+[0m19:32:28.184274 [info ] [MainThread]:   use_credential_provider: None
+[0m19:32:28.184494 [info ] [MainThread]:   attach: None
+[0m19:32:28.184712 [info ] [MainThread]:   filesystems: None
+[0m19:32:28.184934 [info ] [MainThread]:   remote: None
+[0m19:32:28.185150 [info ] [MainThread]:   plugins: None
+[0m19:32:28.185380 [info ] [MainThread]:   disable_transactions: False
+[0m19:32:28.186231 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m19:32:29.002480 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m19:32:29.833593 [debug] [MainThread]: Using duckdb connection "debug"
+[0m19:32:29.834525 [debug] [MainThread]: On debug: select 1 as id
+[0m19:32:29.835149 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:32:29.879962 [debug] [MainThread]: DuckDB adapter: duckdb error: IO Error: Could not set lock on file "/Users/rimona/fintech-pulse/ingestion/fintech_pulse.duckdb": Conflicting lock is held in /opt/anaconda3/envs/tf/bin/python3.10 (PID 55169) by user rimona. See also https://duckdb.org/docs/stable/connect/concurrency
+[0m19:32:29.880625 [debug] [MainThread]: DuckDB adapter: Error running SQL: select 1 as id
+[0m19:32:29.881083 [debug] [MainThread]: DuckDB adapter: Rolling back transaction.
+[0m19:32:29.881589 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:32:29.890852 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m19:32:29.891707 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m19:32:29.892073 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/rimona/fintech-pulse/dbt_project.yml> not found
+
+[0m19:32:29.892425 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >IO Error: Could not set lock on file "/Users/rimona/fintech-pulse/ingestion/fintech_pulse.duckdb": Conflicting lock is held in /opt/anaconda3/envs/tf/bin/python3.10 (PID 55169) by user rimona. See also https://duckdb.org/docs/stable/connect/concurrency
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m19:32:29.896991 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 2.735991, "process_in_blocks": "0", "process_kernel_time": 0.416084, "process_mem_max_rss": "109404160", "process_out_blocks": "0", "process_user_time": 1.290658}
+[0m19:32:29.901636 [debug] [MainThread]: Command `dbt debug` failed at 19:32:29.901332 after 2.74 seconds
+[0m19:32:29.902278 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:32:29.902752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f93eef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a76920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a767a0>]}
+[0m19:32:29.903266 [debug] [MainThread]: Flushing usage events
+[0m19:32:30.109913 [debug] [MainThread]: An error was encountered while trying to flush usage events
